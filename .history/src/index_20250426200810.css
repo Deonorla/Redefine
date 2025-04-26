@@ -7,26 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-@theme {
-  /* Font Family */
-  --font-circular-web: "circular-web", sans-serif;
-  --font-general: "general", sans-serif;
-  --font-robert-medium: "robert-medium", sans-serif;
-  --font-robert-regular: "robert-regular", sans-serif;
-  --font-zentry: "Zentry", sans-serif;
-  /* colors blue */
-  --color-blue-50: #dfdff0;
-  --color-blue-75: #dfdff2;
-  --color-blue-100: #f0f2fa;
-  --color-blue-200: #010101;
-  --color-blue-300: #4fb7dd;
-  /* color violet */
-  --color-violet-300: #5724ff;
-  /* color yellow */
-  --color-yellow-100: #8e983f;
-  --color-yellow-300: #edff66;
-}
-
 @layer base {
   @font-face {
     font-family: "circular-web";
