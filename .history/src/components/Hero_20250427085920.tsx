@@ -33,19 +33,13 @@ const Hero = () => {
                 className="size-64 origin-center scale-150 object-cover object-center "
                 id="current-video"
                 ref={nextVideoRef}
-                src={getVideoSrc(upcomingVideoIndex)}
+                src={getVideoSrc(currentIndex + 1)}
                 onLoadedData={handleVideoLoad}
                 loop
                 muted
               />
             </div>
           </div>
-          <video
-            ref={nextVideoRef}
-            src={getVideoSrc(currentIndex)}
-            loop
-            muted
-          />
         </div>
       </div>
     </div>
