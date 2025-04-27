@@ -5,7 +5,7 @@ const Hero = () => {
   const [hasClicked, setHasClicked] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [loadedVideos, setLoadedVideos] = useState(0);
-  const totalVideos = 4;
+  const totalVideos = 3;
   const nextVideoRef = useRef(null);
   const getVideoSrc = (index: number) => `videos/hero-${index}.mp4`;
   const upcomingVideoIndex = (currentIndex % totalVideos) + 1;
@@ -50,21 +50,15 @@ const Hero = () => {
             muted
           />
           <video
-            className="absolute left-0 top-0 h-screen w-screen object-cover object-center"
+            className="absolute left-0 top-0 size-full oject-cover object-center"
             src={getVideoSrc(
-              upcomingVideoIndex - 1 === 0
-                ? totalVideos
-                : upcomingVideoIndex - 1
+              currentIndex === totalVideos - 1 ? 1 : currentIndex
             )}
-            onLoadedData={handleVideoLoad}
             autoPlay
             loop
             muted
           />
         </div>
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          G<b>a</b>ming
-        </h1>
       </div>
     </div>
   );

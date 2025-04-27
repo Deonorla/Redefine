@@ -51,20 +51,12 @@ const Hero = () => {
           />
           <video
             className="absolute left-0 top-0 h-screen w-screen object-cover object-center"
-            src={getVideoSrc(
-              upcomingVideoIndex - 1 === 0
-                ? totalVideos
-                : upcomingVideoIndex - 1
-            )}
-            onLoadedData={handleVideoLoad}
+            src={getVideoSrc(currentIndex + 1)}
             autoPlay
             loop
             muted
           />
         </div>
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          G<b>a</b>ming
-        </h1>
       </div>
     </div>
   );
