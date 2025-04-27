@@ -3,9 +3,6 @@ import Button from "./Button";
 import { TiLocationArrow } from "react-icons/ti";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-
-gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -67,7 +64,7 @@ const Hero = () => {
     });
     gsap.from("#video-frame", {
       clipPath:
-        "polygon(0% 0%, 0% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 0%)",
+        "polygon(0% 0%, 100% 1000%, 100% 100%, 100% 100%, 0% 100%, 100% 0%)",
       borderRadius: "0 0 0 0",
       ease: "power1.inOut",
       scrollTrigger: {
