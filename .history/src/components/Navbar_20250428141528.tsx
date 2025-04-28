@@ -33,7 +33,7 @@ const Navbar = () => {
       }
     }
     setLastScrollY(currentScrollY);
-  }, [currentScrollY, lastScrollY]);
+  }, [currentScrollY]);
 
   useEffect(() => {
     gsap.to(navContainerRef.current, {
