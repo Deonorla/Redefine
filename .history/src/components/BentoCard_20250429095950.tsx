@@ -3,7 +3,7 @@ import React from "react";
 interface BentoCardProps {
   src: string;
   title: string | React.ReactNode;
-  description?: string;
+  description: string;
   isComingSoon?: boolean;
 }
 
@@ -25,9 +25,6 @@ const BentoCard = ({
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
           <h1 className="bento-title special-font"> {title}</h1>
-          {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
-          )}
         </div>
       </div>
     </div>
