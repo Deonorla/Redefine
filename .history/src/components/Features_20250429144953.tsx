@@ -5,7 +5,7 @@ import { TiLocationArrow } from "react-icons/ti";
 const Features = () => {
   return (
     <section className="bg-black pb-52">
-      <div className=" mx-auto px-3 md:!px-5">
+      <div className="container mx-auto px-3 md:px-5">
         <div className="px-5 py-32">
           <p className="font-circular-web text-lg text-blue-50">
             Into the Metagame Layer
@@ -32,7 +32,7 @@ const Features = () => {
           />
         </div>
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
-          <div className="bento-tilt_1 row-span-1 md:!col-span-1 md:row-span-2">
+          <div className="bento-tilt_1 col-start-1 col-end-2 row-span-1 md:col-span-1 md:row-span-2">
             <BentoCard
               src="videos/feature-2.mp4"
               title={
@@ -43,7 +43,7 @@ const Features = () => {
               description="An anime and gaming inspired NFT collection - the Ip primed for expansion."
             />
           </div>
-          <div className="bento-tilt_1 row-span-1 ms-32 md:!col-span-1 md:ms-0">
+          <div className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
             <BentoCard
               src="videos/feature-3.mp4"
               title={
@@ -54,7 +54,7 @@ const Features = () => {
               description="A gamified social hub, adding a new dimension to your gaming experience."
             />
           </div>
-          <div className="bento-tilt_1 me-14 md:!col-span-1 md:me-0">
+          <div className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
             <BentoCard
               src="videos/feature-4.mp4"
               title={
