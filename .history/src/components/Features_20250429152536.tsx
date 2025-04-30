@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import BentoCard from "./BentoCard";
 import { TiLocationArrow } from "react-icons/ti";
 
@@ -6,33 +6,7 @@ const BentoTilt: React.FC<{
   children: React.ReactNode;
   className?: string;
 }> = ({ children, className }) => {
-  const itemRef = useRef<HTMLDivElement>(null);
-  const [transformStyle, setTransformStyle] = React.useState("");
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!itemRef.current) return;
-    const { left, top, width, height } =
-      itemRef.current.getBoundingClientRect(); //gets the bounding box of the element and returns its position on the screen
-    const relativeX = (e.clientX - left) / width; //calculates the x position of the mouse relative to the element
-    const relativeY = (e.clientY - top) / height; //calculates the y position of the mouse relative to the element
-    const tiltX = (relativeY - 0.5) * 5; //calculates the tilt of the element on the x axis
-    const tiltY = (relativeX - 0.5) * -5; //calculates the tilt of the element on the y axis
-    const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.98, .98, .98)`;
-    setTransformStyle(newTransform); //sets the transform style of the element to the new transform
-  };
-  const handleMouseLeave = () => {
-    setTransformStyle("");
-  };
-  return (
-    <div
-      className={className}
-      ref={itemRef}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={{ transform: transformStyle }}
-    >
-      {children}
-    </div>
-  );
+  return <div className={className}>{children}</div>;
 };
 
 const Features = () => {
@@ -51,7 +25,7 @@ const Features = () => {
             with the game and each other.
           </p>
         </div>
-        <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
+        <div className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
             src="videos/feature-1.mp4"
             title={
@@ -63,7 +37,7 @@ const Features = () => {
           rewarding experience. "
             isComingSoon
           />
-        </BentoTilt>
+        </div>
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
           <BentoTilt className="bento-tilt_1 row-span-1 md:!col-span-1 md:row-span-2">
             <BentoCard

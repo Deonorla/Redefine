@@ -16,7 +16,7 @@ const BentoTilt: React.FC<{
     const relativeY = (e.clientY - top) / height; //calculates the y position of the mouse relative to the element
     const tiltX = (relativeY - 0.5) * 5; //calculates the tilt of the element on the x axis
     const tiltY = (relativeX - 0.5) * -5; //calculates the tilt of the element on the y axis
-    const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.98, .98, .98)`;
+    const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.95, .95, .95)`;
     setTransformStyle(newTransform); //sets the transform style of the element to the new transform
   };
   const handleMouseLeave = () => {
@@ -51,7 +51,7 @@ const Features = () => {
             with the game and each other.
           </p>
         </div>
-        <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
+        <div className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
           <BentoCard
             src="videos/feature-1.mp4"
             title={
@@ -63,7 +63,7 @@ const Features = () => {
           rewarding experience. "
             isComingSoon
           />
-        </BentoTilt>
+        </div>
         <div className="grid h-[135vh] grid-cols-2 grid-rows-3 gap-7">
           <BentoTilt className="bento-tilt_1 row-span-1 md:!col-span-1 md:row-span-2">
             <BentoCard

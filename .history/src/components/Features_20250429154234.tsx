@@ -16,7 +16,7 @@ const BentoTilt: React.FC<{
     const relativeY = (e.clientY - top) / height; //calculates the y position of the mouse relative to the element
     const tiltX = (relativeY - 0.5) * 5; //calculates the tilt of the element on the x axis
     const tiltY = (relativeX - 0.5) * -5; //calculates the tilt of the element on the y axis
-    const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.98, .98, .98)`;
+    const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.95, .95, .95)`;
     setTransformStyle(newTransform); //sets the transform style of the element to the new transform
   };
   const handleMouseLeave = () => {
