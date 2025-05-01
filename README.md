@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+![Screenshot 2025-05-01 at 14 09 07](https://github.com/user-attachments/assets/bf3c039f-d1ef-4e82-8f3d-13d1583f5aa1)# 🌀 Redefine — Animated Landing Page with GSAP, React & Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Redefine is a modern, animated landing page built using **React**, **Vite**, and the **GSAP animation library**. Designed to be visually stunning and smooth, it features sleek transitions, parallax movement, and subtle 3D effects to deliver an immersive user experience. (Zentry clone)
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡ Lightning-fast performance with [Vite](https://vitejs.dev/)
+- 🧠 Fully component-based with [React](https://reactjs.org/)
+- 🎯 Smooth animations using [GSAP (GreenSock Animation Platform)](https://gsap.com/)
+- 🎥 Scroll-triggered effects & parallax motion
+- 🧊 3D hover interactions and layered depth illusions
+- 🎨 Clean, modern design with responsive layout
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Redefine Landing Screenshot]
+![Screenshot 2025-05-01 at 14 09 47](https://github.com/user-attachments/assets/da314740-b731-4a82-874a-c97d107dee8b)
+![Screenshot 2025-05-01 at 14 05 55](https://github.com/user-attachments/assets/08bdd310-eb2d-41f9-aded-ee5cb443fab4)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/deonorla/redefine.git
+cd redefine
+npm install
+npm run dev
