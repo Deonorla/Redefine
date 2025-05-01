@@ -2,7 +2,6 @@ import React from "react";
 import AnimatedTitle from "./AnimatedTitle";
 import gsap from "gsap";
 import RoundedCorners from "./RoundedCorners";
-import Button from "./Button";
 
 const Story = () => {
   const frameRef = React.useRef<HTMLImageElement>(null);
@@ -73,19 +72,7 @@ const Story = () => {
             <RoundedCorners />
           </div>
         </div>
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
-          <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms collide, stories unfold. Discover the hidden
-              narrative of a universe waiting to be explored.
-            </p>
-            <Button
-              id="realm-button"
-              containerClass="mt-5 "
-              title="discover prologue"
-            />
-          </div>
-        </div>
+        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end"></div>
       </div>
     </section>
   );

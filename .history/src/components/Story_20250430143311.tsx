@@ -1,22 +1,11 @@
 import React from "react";
 import AnimatedTitle from "./AnimatedTitle";
 import gsap from "gsap";
-import RoundedCorners from "./RoundedCorners";
-import Button from "./Button";
 
 const Story = () => {
   const frameRef = React.useRef<HTMLImageElement>(null);
 
-  const handleOnMouseLeave = () => {
-    const element = frameRef.current;
-    gsap.to(element, {
-      duration: 0.3,
-      rotateX: 0,
-      rotateY: 0,
-
-      ease: "power1.out",
-    });
-  };
+  const handleOnMouseLeave = () => {};
   const handleOnMouseMove = (e: React.MouseEvent<HTMLImageElement>) => {
     const { clientX, clientY } = e;
     const element = frameRef.current;
@@ -70,20 +59,6 @@ const Story = () => {
                 />
               </div>
             </div>
-            <RoundedCorners />
-          </div>
-        </div>
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
-          <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms collide, stories unfold. Discover the hidden
-              narrative of a universe waiting to be explored.
-            </p>
-            <Button
-              id="realm-button"
-              containerClass="mt-5 "
-              title="discover prologue"
-            />
           </div>
         </div>
       </div>

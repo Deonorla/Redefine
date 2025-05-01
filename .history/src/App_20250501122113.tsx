@@ -3,7 +3,6 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Story from "./components/Story";
-import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
       <Features />
       <Story />
       <Contact />
-      <Footer />
     </main>
   );
 };

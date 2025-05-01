@@ -2,7 +2,6 @@ import React from "react";
 import AnimatedTitle from "./AnimatedTitle";
 import gsap from "gsap";
 import RoundedCorners from "./RoundedCorners";
-import Button from "./Button";
 
 const Story = () => {
   const frameRef = React.useRef<HTMLImageElement>(null);
@@ -79,11 +78,6 @@ const Story = () => {
               Where realms collide, stories unfold. Discover the hidden
               narrative of a universe waiting to be explored.
             </p>
-            <Button
-              id="realm-button"
-              containerClass="mt-5 "
-              title="discover prologue"
-            />
           </div>
         </div>
       </div>
