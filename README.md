@@ -13,7 +13,11 @@ Redefine is a modern, animated landing page built using **React**, **Vite**, and
 
 ## 📸 Preview
 
-![Redefine Landing Screenshot](./src/assets/screenshot.png) <!-- Add your own screenshot in this path -->
+![Redefine Landing Screenshot]
+![Screenshot 2025-05-01 at 14 04 27](https://github.com/user-attachments/assets/4ea7067b-b65c-49f5-8cf4-dd256da5e0c8)
+![Screenshot 2025-05-01 at 14 05 03](https://github.com/user-attachments/assets/24a954db-a7bc-4d61-8818-a0a236ee7987)
+
+
 
 ## 🚀 Getting Started
 
