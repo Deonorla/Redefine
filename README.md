@@ -1,6 +1,6 @@
 # 🌀 Redefine — Animated Landing Page with GSAP, React & Vite
 
-Redefine is a modern, animated landing page built using **React**, **Vite**, and the **GSAP animation library**. Designed to be visually stunning and smooth, it features sleek transitions, parallax movement, and subtle 3D effects to deliver an immersive user experience.
+Redefine is a modern, animated landing page built using **React**, **Vite**, and the **GSAP animation library**. Designed to be visually stunning and smooth, it features sleek transitions, parallax movement, and subtle 3D effects to deliver an immersive user experience. (Zentry clone)
 
 ## ✨ Features
 
@@ -14,8 +14,8 @@ Redefine is a modern, animated landing page built using **React**, **Vite**, and
 ## 📸 Preview
 
 ![Redefine Landing Screenshot]
-![Screenshot 2025-05-01 at 14 04 27](https://github.com/user-attachments/assets/4ea7067b-b65c-49f5-8cf4-dd256da5e0c8)
-![Screenshot 2025-05-01 at 14 05 03](https://github.com/user-attachments/assets/24a954db-a7bc-4d61-8818-a0a236ee7987)
+![Screenshot 2025-05-01 at 14 06 17](https://github.com/user-attachments/assets/2aefa985-cf10-4811-b65c-195a1d771d05)
+![Screenshot 2025-05-01 at 14 05 55](https://github.com/user-attachments/assets/08bdd310-eb2d-41f9-aded-ee5cb443fab4)
 
 
 
