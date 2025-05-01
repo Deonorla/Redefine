@@ -24,7 +24,7 @@ Redefine is a modern, animated landing page built using **React**, **Vite**, and
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/redefine.git
+git clone https://github.com/deonorla/redefine.git
 cd redefine
 npm install
 npm run dev
