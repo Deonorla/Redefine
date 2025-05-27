@@ -13,7 +13,7 @@ Redefine is a modern, animated landing page built using **React**, **Vite**, and
 
 ## 📸 Preview
 
-![Redefine Landing Screenshot]
+
 ![Screenshot 2025-05-01 at 14 09 47](https://github.com/user-attachments/assets/da314740-b731-4a82-874a-c97d107dee8b)
 ![Screenshot 2025-05-01 at 14 05 55](https://github.com/user-attachments/assets/08bdd310-eb2d-41f9-aded-ee5cb443fab4)
 
